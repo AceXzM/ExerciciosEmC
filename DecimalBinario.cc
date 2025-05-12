@@ -4,14 +4,14 @@
 
 int main () {
     char binario[16];
-    int total = 0;
+    int total = 0, tamanho, potencia;
 
     printf("Digite um numero binario: ");
     fgets(binario, 16, stdin);
     binario[strcspn(binario, "\n")] = '\0';
 
-    int tamanho = strlen(binario);
-    int potencia = 0;
+    tamanho = strlen(binario);
+    potencia = 0;
 
     for (int i = tamanho - 1; i >= 0; i--) {
         int digito = binario[i] - '0';
