@@ -25,8 +25,12 @@ int main() {
             cont++;
         }
     }
-
+    
     media = soma / cont;
+
+    for (int i = 0; i < 5; i++) {
+        printf("Salto %d: %.2f m\n", i + 1, salto[i]);
+    }
 
     printf("\nAtleta: %s\n", atleta);
     printf("Maior salto: %.2f\n", maior);
